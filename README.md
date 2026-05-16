@@ -12,10 +12,6 @@ ACP (Agent Client Protocol) agent transport for pi. Exposes a fully ACP-complian
 
 Alibaba Cloud (DashScope) provider extension. Adds DashScope as a model provider so you can use Qwen and other DashScope-hosted models within pi. Set `DASHSCOPE_API_KEY` and go.
 
-### [pi-ephemeral-files](https://github.com/harms-haus/pi-ephemeral-files)
-
-Session-scoped virtual files that exist in session history but never touch the filesystem. Provides `write_ephemeral`, `read_ephemeral`, and `edit_ephemeral` tools with head/tail/range/grep reading modes, search/replace/append/insert editing, and an HTTP server for cross-process subagent access.
-
 ### [pi-cwd](https://github.com/harms-haus/pi-cwd)
 
 Change the effective working directory without restarting the agent. Provides a `/cwd` command with tab-completion, a footer indicator, and session persistence across reloads.
