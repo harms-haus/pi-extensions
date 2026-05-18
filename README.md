@@ -20,13 +20,9 @@ Change the effective working directory without restarting the agent. Provides a 
 
 Rich git status tracking with a live, color-coded footer label and an agent-end summary of changed files. Integrates with [pi-powerline](#pi-powerline) for display.
 
-### [pi-lint](https://github.com/harms-haus/pi-lint)
+### [pi-lens](https://github.com/harms-haus/pi-lens)
 
-Auto-detect and run linters after every edit. Supports 11+ linters (ESLint, Biome, Ruff, Flake8, Pylint, Mypy, Clippy, staticcheck, RuboCop, ShellCheck, Stylelint) with a `lint_files` tool and `/lint-status` command.
-
-### [pi-lsp](https://github.com/harms-haus/pi-lsp)
-
-Full LSP (Language Server Protocol) integration with auto-diagnostics on edit/write, 11 LSP-powered tools (`find_references`, `find_definition`, `rename_symbol`, `hover`, `find_implementations`, etc.), auto-install of missing servers, and support for 33 languages.
+Unified code quality checks after every file change. Hooks after `write`, `edit`, and `bash` tools to automatically run prettier (report-only), 11 linters (ESLint, Biome, Ruff, Flake8, Pylint, Mypy, Clippy, staticcheck, RuboCop, ShellCheck, Stylelint), LSP diagnostics across 33 languages, and TypeScript `tsc --noEmit` — all concurrently via `Promise.all`. Configurable via `.pi-lens.json`.
 
 ### [pi-powerline](https://github.com/harms-haus/pi-powerline)
 
@@ -71,8 +67,7 @@ pi install git:github.com/harms-haus/<extension-name>
 For example:
 
 ```bash
-pi install git:github.com/harms-haus/pi-lsp
-pi install git:github.com/harms-haus/pi-lint
+pi install git:github.com/harms-haus/pi-lens
 pi install git:github.com/harms-haus/pi-workflows
 ```
 
@@ -84,8 +79,7 @@ For a fully-featured software development agent, install these extensions togeth
 
 | Extension | Purpose |
 |-----------|---------|
-| **pi-lsp** | Language intelligence (diagnostics, go-to-definition, rename, references) |
-| **pi-lint** | Automatic linting after every edit |
+| **pi-lens** | Unified code quality checks (linters, LSP diagnostics, prettier, tsc) after every edit |
 | **pi-git** | Live git status in the footer |
 | **pi-powerline** | Unified status bar |
 | **pi-til-done** | Iterative task tracking with auto-continue |
