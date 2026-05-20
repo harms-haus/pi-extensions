@@ -8,10 +8,6 @@ A curated collection of extensions and tools for building a powerful [pi coding 
 
 ACP (Agent Client Protocol) agent transport for pi. Exposes a fully ACP-compliant agent over JSON-RPC 2.0 on stdin/stdout, enabling any ACP-compatible client (Zed, VS Code, etc.) to drive the pi coding agent.
 
-### [pi-alibaba-dashscope](https://github.com/harms-haus/pi-alibaba-dashscope)
-
-Alibaba Cloud (DashScope) provider extension. Adds DashScope as a model provider so you can use Qwen and other DashScope-hosted models within pi. Set `DASHSCOPE_API_KEY` and go.
-
 ### [pi-cwd](https://github.com/harms-haus/pi-cwd)
 
 Change the effective working directory without restarting the agent. Provides a `/cwd` command with tab-completion, a footer indicator, and session persistence across reloads.
