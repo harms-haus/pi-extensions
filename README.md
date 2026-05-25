@@ -4,10 +4,6 @@ A curated collection of extensions and tools for building a powerful [pi coding 
 
 ## Extensions
 
-### [pi-acp](https://github.com/harms-haus/pi-acp)
-
-ACP (Agent Client Protocol) agent transport for pi. Exposes a fully ACP-compliant agent over JSON-RPC 2.0 on stdin/stdout, enabling any ACP-compatible client (Zed, VS Code, etc.) to drive the pi coding agent.
-
 ### [pi-cwd](https://github.com/harms-haus/pi-cwd)
 
 Change the effective working directory without restarting the agent. Provides a `/cwd` command with tab-completion, a footer indicator, and session persistence across reloads.
@@ -20,17 +16,9 @@ Rich git status tracking with a live, color-coded footer label and an agent-end 
 
 Unified code quality checks after every file change. Hooks after `write`, `edit`, and `bash` tools to automatically run prettier (report-only), 11 linters (ESLint, Biome, Ruff, Flake8, Pylint, Mypy, Clippy, staticcheck, RuboCop, ShellCheck, Stylelint), LSP diagnostics across 33 languages, and TypeScript `tsc --noEmit` — all concurrently via `Promise.all`. Configurable via `.pi-lens.json`.
 
-### [pi-powerline](https://github.com/harms-haus/pi-powerline)
-
-Centralized powerline status bar. Replaces the built-in footer and consolidates status displays from all extensions into a unified layout — todo counts, workflow phase, active tasks, and more.
-
 ### [pi-processes](https://github.com/harms-haus/pi-processes)
 
 Process management tools. Spawn, monitor, kill, and restart long-running processes (dev servers, watchers, API backends) with debounce-based startup detection, log querying, and SIGTERM → SIGKILL escalation.
-
-### [pi-searxng](https://github.com/harms-haus/pi-searxng)
-
-Web search via a self-hosted SearXNG instance. Adds a `web_search` tool so the agent can look up documentation, APIs, and answers online.
 
 ### [pi-subagents](https://github.com/harms-haus/pi-subagents)
 
