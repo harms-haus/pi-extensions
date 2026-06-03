@@ -44,7 +44,7 @@ Spawn parallel sub-agents with live TUI output windows. Each sub-agent runs in i
 pi install npm:@harms-haus/pi-subagents
 ```
 
-### [pi-tasks](https://github.com/harms-haus/pi-kanban)
+### [pi-kanban](https://github.com/harms-haus/pi-kanban)
 
 Phased task board with strict status gating, dependency tracking, auto-continue, and session persistence. Tasks progress through an enforced lifecycle: `draft` → `ready` → `testing` → `implementing` → `review` → `done`.
 
