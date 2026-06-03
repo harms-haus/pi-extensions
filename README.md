@@ -44,12 +44,12 @@ Spawn parallel sub-agents with live TUI output windows. Each sub-agent runs in i
 pi install npm:@harms-haus/pi-subagents
 ```
 
-### [pi-tasks](https://github.com/harms-haus/pi-tasks)
+### [pi-tasks](https://github.com/harms-haus/pi-kanban)
 
-Phased task board with strict status gating, dependency tracking, phase-based execution, auto-continue, and session persistence. Tasks progress through an enforced lifecycle: `draft` → `configured` → `ready` → `implementing` → `reviewing` → `done`.
+Phased task board with strict status gating, dependency tracking, auto-continue, and session persistence. Tasks progress through an enforced lifecycle: `draft` → `ready` → `testing` → `implementing` → `review` → `done`.
 
 ```bash
-pi install npm:@harms-haus/pi-tasks
+pi install npm:@harms-haus/pi-kanban
 ```
 
 ### [pi-til-done](https://github.com/harms-haus/pi-til-done)
@@ -120,7 +120,7 @@ For a fully-featured software development agent, install these extensions togeth
 | **pi-lens** | Unified code quality checks (linters, LSP diagnostics, prettier, tsc) after every edit |
 | **pi-git** | Live git status in the footer |
 | **pi-til-done** | Iterative task tracking with auto-continue |
-| **pi-tasks** | Phased task board with dependency tracking |
+| **pi-kanban** | Phased task board with dependency tracking |
 | **pi-subagents** | Parallel sub-agent execution |
 | **pi-workflows** | Multi-phase workflow orchestration |
 | **pi-processes** | Dev server and process management |
